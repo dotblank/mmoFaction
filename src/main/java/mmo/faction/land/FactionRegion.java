@@ -1,13 +1,15 @@
 package mmo.faction.land;
 
+import java.util.HashSet;
+
 import com.vividsolutions.jts.geom.Polygon;
 
 import mmo.faction.Unit;
 
-public class FactionRegion {
+public class FactionRegion implements Region {
 	private Unit owner;
-	private Polygon pgon;
 	private String name;
+	public HashSet<Polygon> areas = new HashSet<Polygon>();
 
 	public void setOwner(Unit owner) {
 		this.owner = owner;
@@ -17,14 +19,6 @@ public class FactionRegion {
 		return owner;
 	}
 
-	public void setPgon(Polygon pgon) {
-		this.pgon = pgon;
-	}
-
-	public Polygon getPgon() {
-		return pgon;
-	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -32,5 +26,4 @@ public class FactionRegion {
 	public String getName() {
 		return name;
 	}
-	
 }
