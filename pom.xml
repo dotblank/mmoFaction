@@ -90,6 +90,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
+      		<groupId>junit</groupId>
+      		<artifactId>junit</artifactId>
+      		<version>4.8.1</version>
+    	</dependency>
+		<dependency>
 			<groupId>com.vividsolutions</groupId>
 			<artifactId>jts</artifactId>
 			<version>1.11</version>
