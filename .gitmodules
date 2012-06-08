@@ -1,0 +1,3 @@
+[submodule "prtree"]
+	path = prtree
+	url = http://khelekore.org/prtree/prtree.git
