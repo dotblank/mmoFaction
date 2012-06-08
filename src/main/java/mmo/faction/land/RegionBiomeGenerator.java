@@ -69,7 +69,7 @@ public class RegionBiomeGenerator extends Thread {
 					if(biome == null) {
 						biome = w.getBiome(x, y);
 						if(biome == Biome.OCEAN) {
-							break;
+							throw new RegionGenerationException(Reason.OCEAN);
 						}
 					}
 					if(biome == w.getBiome(x, y)) {
